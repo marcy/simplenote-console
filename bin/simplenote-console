@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'simplenote'
+require 'highline'
+
+simplenote = SimpleNote.new
+ui = HighLine.new
+
+email = ui.ask('Email: ')
+passwd = ui.ask('Password: ') { |q| q.echo = false }
+
+begin
+  simplenote.login(email, passwd)
+rescue
+  puts 'login faild'
+  exit
+end
+
+loop do
+  tw = ui.ask('> ')
+  break if tw == 'quit'
+  simplenote.create_note(tw)
+end
