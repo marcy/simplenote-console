@@ -6,10 +6,10 @@ require 'simplenote/console/version'
 Gem::Specification.new do |spec|
   spec.name          = "simplenote-console"
   spec.version       = Simplenote::Console::VERSION
-  spec.authors       = ["oyamada_masashi"]
-  spec.email         = ["masashi.oyamada@drecom.co.jp"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.authors       = [""]
+  spec.email         = [""]
+  spec.description   = %q{}
+  spec.summary       = %q{}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "simplenote"
+  spec.add_runtime_dependency "highline"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
