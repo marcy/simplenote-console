@@ -1,4 +1,4 @@
-Copyright (c) 2013 oyamada_masashi
+Copyright (c) 2013 marcy
 
 MIT License
 
