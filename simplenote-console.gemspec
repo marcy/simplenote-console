@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Simplenote::Console::VERSION
   spec.authors       = [""]
   spec.email         = [""]
-  spec.description   = %q{}
+  spec.description   = %q{a}
   spec.summary       = %q{}
   spec.homepage      = ""
   spec.license       = "MIT"
